@@ -1,0 +1,87 @@
+a {
+    text-decoration:none;
+    border: none;
+  }
+
+  body {
+    background-color: black;
+  }
+
+section.galleryContainer .galleryCol {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex: 3; */
+    gap: 0px;
+    /* flex: 1 1 0px; */
+  }
+
+
+  section.galleryContainer .galleryCol .gallContent {
+    width: 33%;
+    margin: 0 auto;
+    padding: 0px;
+    background-color: black;
+    position: relative;
+    border: dashed white;
+  }
+
+  section.galleryContainer .galleryCol .gallContent img{
+    width: 100%;
+    /* height: auto; */
+    display: block;
+    opacity: 1;
+    /* backface-visibility: hidden; */
+    transition: 0.5s;
+  }
+  section.galleryContainer .galleryCol .gallContent:hover img {
+    background-color: #000000;
+    opacity: 0;
+  }
+
+  .galleryCol .gallContent .hoverText {
+    display: none;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    /* flex-direction: row; */
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 1;
+    z-index: 3;
+    transition: 0.5s;
+  }
+
+  .galleryCol .gallContent:hover .hoverText{
+    display: flex;
+  }
+
+  .hoverText{
+    font-family: 'montserrat', sans-serif;
+    font-size: 90px;
+  }
+
+  #pink{
+    color: #ea3981;
+  }
+
+  #blue {
+    color: #677ff9;
+  }
+
+  #yellow {
+    color: #ffcd04;
+  }
+
+  #green {
+    color: #75ce20;
+  }
+
+  #noChange {
+    opacity: 1;
+  }
